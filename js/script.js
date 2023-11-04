@@ -1,5 +1,5 @@
 function sighUpDropDownFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
+    document.getElementById("sigh-up").classList.toggle("show");
 }
 
 // Close the dropdown if the user clicks outside of it
