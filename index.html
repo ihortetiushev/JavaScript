@@ -18,14 +18,22 @@
                 <div class="navbar-menu">
                     <a href="#">Топ продажу</a>
                     <a href="#">Новинки</a>
-                    <a href="#">Ціни</a>
+                    <!--<a href="#">Ціни</a>-->
                     <!--<a href="#">Увійти</a>-->
 
                     <div class="dropdown">
-                        <a href="#" onclick="sighUpDropDownFunction()" class="dropbtn">Увійти</a>
+                        <a href="#" onclick="sighUpDropDownFunction('price')" class="dropbtn">Ціни</a>
+                        <div id="price" class="dropdown-content">
+                            <a href="">Від дешевих до дорогих</a>
+                            <a href="">Від дорогих до дешевих</a>
+                        </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <a href="#" onclick="sighUpDropDownFunction('sigh-up')" class="dropbtn">Увійти</a>
                         <div id="sigh-up" class="dropdown-content">
-                            <a href="#registr">Створити акаунт</a>
-                            <a href="#sign-up">Увійти</a>
+                            <a href="register.html">Створити акаунт</a>
+                            <a href="login.html">Увійти</a>
                         </div>
                     </div>
 
