@@ -1,5 +1,5 @@
 body {
-    background-image: url("../background.jpg");
+    background-image: url("../background2.jpg");
 
     /* margin: 0;
      background: aquamarine;
@@ -179,15 +179,7 @@ aside {
     color: floralwhite;
     font-size: 110%;
 }
-
-
-
 .dropbtn {
-   // background-color: #3498DB;
-   // color: white;
-   // padding: 16px;
-   // font-size: 16px;
-   // border: none;
     cursor: pointer;
 }
 
@@ -213,8 +205,20 @@ aside {
     display: block;
 }
 
-
 .show {display: block;}
 
+.container1{
+    display:flex;
+}
+.container1 div{
+    padding:10px;
+    color: floralwhite;
+    border: none;
+}
+
+.img{
+    width: 150px;
+    height: 200px;
+}
 
 
