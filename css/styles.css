@@ -23,7 +23,7 @@ body {
 
 
 main {
-    min-height: 419px;
+    min-height: 400px;
 }
 
 
@@ -39,7 +39,7 @@ aside {
     float: right;
     margin: 0;
     padding: 0;
-    min-height: 419px;
+    min-height: 690px;
     border-left: 2px solid burlywood;
 }
 
@@ -207,18 +207,19 @@ aside {
 
 .show {display: block;}
 
-.container1{
+.img{
+    width: 150px;
+    height: 200px;
+}
+
+.container{
     display:flex;
 }
-.container1 div{
+.container div{
     padding:10px;
     color: floralwhite;
     border: none;
 }
 
-.img{
-    width: 150px;
-    height: 200px;
-}
 
 
