@@ -1,15 +1,6 @@
 body {
     background-image: url("../background2.jpg");
 
-    /* margin: 0;
-     background: aquamarine;
-
- }
- *,
- *:before,
- *:after {
-     box-sizing: border-box;*/
-    /*background: aquamarine;*/
     position: relative;
     font-family: 'Noto Sans', sans-serif;
     font-size: 16px;
@@ -167,7 +158,6 @@ aside {
     box-sizing: border-box;
     text-decoration: none;
     transition: 0.2s;
-    /*border-style: groove;*/
 }
 
 .asideNav li:hover a {
@@ -220,6 +210,4 @@ aside {
     color: floralwhite;
     border: none;
 }
-
-
 
