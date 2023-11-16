@@ -15,7 +15,7 @@ window.onclick = function (event) {
         }
     }
 }
-let images = ['imgJava.jpg','kobzar.jpg']
+let images = ['pic1.jpg','pic2.jpg', 'pic3.jpg']
 let currentIndex = 0;
 
 function changeNextPic() {
@@ -24,7 +24,7 @@ function changeNextPic() {
         currentIndex = 0;
     }
     let image = images[currentIndex]
-    document.getElementById("qqq").src = 'images/' + image
+    document.getElementById("qqq").src = 'slider/' + image
 }
 function changePreviousPic() {
     currentIndex --;
@@ -32,6 +32,6 @@ function changePreviousPic() {
         currentIndex = images.length -1;
     }
     let image = images[currentIndex]
-    document.getElementById("qqq").src = 'images/' + image
+    document.getElementById("qqq").src = 'slider/' + image
 }
 
