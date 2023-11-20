@@ -261,3 +261,32 @@ aside {
     height: 350px;
     object-fit: fill;
 }
+/*Файл з реєстрацією, register.html*/
+/*.form_field{
+    height: 45px;
+    width: 100%;
+    font-size:14px;
+    line-height: 16px;
+    border:2px solid burlywood;
+    border-radius: 5px;
+}*/
+input {
+    font-size: 14px;
+    line-height: 16px;
+    height: 45px;
+    width: 100%;
+    border: 2px solid floralwhite;
+    border-radius: 5px;
+}
+
+.form_title{
+    color: burlywood;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+}
+.registration{
+    max-width: 415px;
+    background: burlywood;
+    border-radius: 20px;
+}
