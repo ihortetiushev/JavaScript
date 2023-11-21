@@ -18,6 +18,7 @@ window.onclick = function (event) {
 let images = ['pic1.jpg','pic2.jpg', 'pic3.jpg']
 let currentIndex = 0;
 
+//Кнопки вперёд / назад
 function changeNextPic() {
     currentIndex ++;
     if(currentIndex>=images.length){
