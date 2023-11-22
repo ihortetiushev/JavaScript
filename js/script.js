@@ -36,13 +36,48 @@ function changePreviousPic() {
     document.getElementById("qqq").src = 'slider/' + image
 }
 //Валидация
-function validateNameSurname(){
+function validateName(){
     let regex = /^[a-zA-Zа-яА-ЯёЁ]{3,}$/;
     let nameValue = document.getElementById("input_name").value;
     if(nameValue.match(regex)){
         return true;
     }
-    else{ alert("Поле Ім'я та Призвище мають містити не менше 3х букв ")}
+    else{
+        alert("Поле Ім'я та Призвище мають містити не менше 3х букв")
+        return false;
+    }
+}
+function validateEmail() {
+    let regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    let emailValue = document.getElementById("input_email").value;
+
+    if(emailValue.match(regex)){
+        return true;
+    }
+    else{
+        alert("Введіть правильну адресу електронної пошти")
+        return false;
+    }
+}
+function checkPhoneNumber() {
+    let regex = /^\d{10,}$/;
+    let phoneValue = document.getElementById("input_phone").value;
+    if (phoneValue.match(regex)) {
+        return true;
+    } else {
+        alert( "Номер телефону введено неправильно!");
+        return false;
+    }
+}
+function checkComment() {
+    let regex = /^.{10,}$/;
+    let commentValue = document.getElementById("input_comment").value;
+    if (commentValue.match(regex)) {
+        return true;
+    } else {
+        alert("Коментар має містити мінімум 10 символів!");
+        return false;
+    }
 }
 
 
