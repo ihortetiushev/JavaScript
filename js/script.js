@@ -45,7 +45,7 @@ function validateName() {
     if (nameValue.match(regex)) {
         return true;
     } else {
-        alert("Поле Ім'я ма містити не менше 3х букв")
+        alert("Поле \"Ім'я\" має містити не менше 3х букв")
         return false;
     }
 }
@@ -56,7 +56,7 @@ function validateSurname() {
     if (surnameValue.match(regex)) {
         return true;
     } else {
-        alert("Поле Ім'я та Призвище мають містити не менше 3х букв")
+        alert("Поле \"Призвище\" має містити не менше 3х букв")
         return false;
     }
 }
@@ -74,12 +74,12 @@ function validateEmail() {
 }
 
 function checkPhoneNumber() {
-    let regex = /^\d{10,}$/;
+    let regex = /^\(\d\d\d\) \d\d\d-\d\d\d\d$/;
     let phoneValue = document.getElementById("input_phone").value;
     if (phoneValue.match(regex)) {
         return true;
     } else {
-        alert("Номер телефону введено неправильно!");
+        alert("Введіть номер телефону у форматі: (_ _ _)  _ _ _ - _ _ _ _. Номер телефону введено неправильно!");
         return false;
     }
 }
@@ -96,7 +96,6 @@ function checkComment() {
 }
 
 function validate() {
-
     if (!validateName()) {
         return;
     }
@@ -110,4 +109,6 @@ function validate() {
         return;
     }
     checkComment();
+    alert("Ви зареєстровані!")
+    window.location.href = "index.html";
 }
