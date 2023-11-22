@@ -35,4 +35,14 @@ function changePreviousPic() {
     let image = images[currentIndex]
     document.getElementById("qqq").src = 'slider/' + image
 }
+//Валидация
+function validateNameSurname(){
+    let regex = /^[a-zA-Zа-яА-ЯёЁ]{3,}$/;
+    let nameValue = document.getElementById("input_name").value;
+    if(nameValue.match(regex)){
+        return true;
+    }
+    else{ alert("Поле Ім'я та Призвище мають містити не менше 3х букв ")}
+}
+
 
