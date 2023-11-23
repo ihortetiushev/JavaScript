@@ -56,7 +56,7 @@ function validateSurname() {
     if (surnameValue.match(regex)) {
         return true;
     } else {
-        alert("Поле \"Призвище\" має містити не менше 3х букв")
+        alert("Поле \"Прізвище\" має містити не менше 3х букв")
         return false;
     }
 }
