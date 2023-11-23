@@ -40,7 +40,7 @@ function changePreviousPic() {
 
 //Валидация
 function validateName() {
-    let regex = /^[a-zA-Zа-яА-ЯёЁ]{3,}$/;
+    let regex = /^[a-zA-ZА-Яа-яЁІЇ]{3,}$/;
     let nameValue = document.getElementById("input_name").value;
     if (nameValue.match(regex)) {
         return true;
@@ -108,7 +108,9 @@ function validate() {
     if (!checkPhoneNumber()) {
         return;
     }
-    checkComment();
-    alert("Ви зареєстровані!")
-    window.location.href = "index.html";
+    if(!checkComment()){
+        return;
+    }
+       alert("Ви зареєстровані!")
+       window.location.href = "index.html";
 }
