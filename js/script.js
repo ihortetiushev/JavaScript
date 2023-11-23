@@ -25,7 +25,7 @@ function changeNextPic() {
         currentIndex = 0;
     }
     let image = images[currentIndex]
-    document.getElementById("qqq").src = 'slider/' + image
+    document.getElementById("pic1").src = 'slider/' + image
 }
 
 function changePreviousPic() {
@@ -34,7 +34,7 @@ function changePreviousPic() {
         currentIndex = images.length - 1;
     }
     let image = images[currentIndex]
-    document.getElementById("qqq").src = 'slider/' + image
+    document.getElementById("pic1").src = 'slider/' + image
 }
 
 
