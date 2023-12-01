@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/styles.css">
+   <!-- <script src="js/anime.js"></script>-->
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
     <script src="js/script.js"></script>
+
     <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <title>My site </title>
 
@@ -42,7 +45,6 @@
 </header>
 
 <main>
-
     <aside>
         <nav class="asideNav">
             <ul>
@@ -60,7 +62,7 @@
 
         <!--СЛАЙДЕР КОНТЕЙНЕР-->
         <div class="slider_container">
-            <button class="left-btn" onclick="changePreviousPic()" type="button"></button>
+            <button class="left-btn" id="left-btn" onclick="changePreviousPic()" type="button"></button>
             <img id="pic1" src="slider/pic1.jpg" alt="">
             <button class="right-btn" onclick="changeNextPic()" type="button"></button>
         </div>

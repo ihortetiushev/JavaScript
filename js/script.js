@@ -14,7 +14,10 @@ window.onclick = function (event) {
             }
         }
     }
+    blockMove();
 }
+
+
 let images = ['pic1.jpg', 'pic2.jpg', 'pic3.jpg']
 let currentIndex = 0;
 
@@ -29,6 +32,7 @@ function changeNextPic() {
 }
 
 function changePreviousPic() {
+    //leftBotton;
     currentIndex--;
     if (currentIndex < 0) {
         currentIndex = images.length - 1;
@@ -114,3 +118,46 @@ function validate() {
        alert("Ви зареєстровані!")
        window.location.href = "index.html";
 }
+
+//Анимация
+
+//не работает
+let leftBotton = anime ({
+    targets: '#left-btn',
+    translateX: -100
+})
+
+
+/*
+let blockMove  = anime ({ // Функція anime() створює анімацію.
+    targets: '#left-btn', // targets: '#block' - обрано елемент з ідентифікатором "block" для анімації.
+    translateX: -100,
+// анімація переміщення блоку на -100 по горизонталі та 300 по вертикалі.
+    translateY: 300,
+    autoplay: false, // вимкнена автоматична відтворення. Анімація не розпочнеться автоматично при завантаженні сторінки.
+    backgroundColor: '#dd9357', // зміна кольору фону на '#dd9357'.
+    borderRadius: '50%', //  заокруглення кутів блоку, зробивши його колом.
+    easing: 'linear', //тип згладжування анімації (linear - лінійний).
+    duration: 2000, // тривалість анімації у мілісекундах (2 секунди).
+    direction: 'alternate', //анімація в обидві сторони (вперед-назад).
+    scale: {
+        value: 2, //значення, на яке буде змінено масштаб об'єкта. У цьому випадку, об'єкт буде збільшено у 2 рази.
+        duration: 1600, //тривалість анімації масштабування у мілісекундах.
+        delay: 800, //затримка перед початком анімації масштабування, також у мілісекундах.
+        easing: 'easeInOutQuart' //функція згладжування, яка визначає, як буде змінюватися швидкість анімації
+    },
+    rotate: '1turn'
+});
+
+*/
+
+//document.querySelector ('.btn').onclick = blockMove.restart;
+//Коли кнопка з класом "btn" натискана (onclick), викликається метод blockMove.restart.
+//Це перезапускає анімацію.
+
+//let moveLeftBotton =
+/*    anime({
+    targets: '#left-btn',
+    autoplay: false,
+    translateX: 100
+});*/
