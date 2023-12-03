@@ -2,6 +2,7 @@ function sighUpDropDownFunction(elementId) {
     document.getElementById(elementId).classList.toggle("show");
 }
 
+
 // Close the dropdown if the user clicks outside of it
 window.onclick = function (event) {
     if (!event.target.matches('.dropbtn')) {
@@ -14,9 +15,7 @@ window.onclick = function (event) {
             }
         }
     }
-    blockMove();
 }
-
 
 let images = ['pic1.jpg', 'pic2.jpg', 'pic3.jpg']
 let currentIndex = 0;
@@ -32,13 +31,13 @@ function changeNextPic() {
 }
 
 function changePreviousPic() {
-    //leftBotton;
     currentIndex--;
     if (currentIndex < 0) {
         currentIndex = images.length - 1;
     }
     let image = images[currentIndex]
     document.getElementById("pic1").src = 'slider/' + image
+    leftButton();
 }
 
 
@@ -120,12 +119,10 @@ function validate() {
 }
 
 //Анимация
-
-//не работает
-let leftBotton = anime ({
+const leftButton = () => anime ({
     targets: '#left-btn',
     translateX: -100
-})
+});
 
 
 /*
