@@ -23,7 +23,7 @@
                     <a href="#">Новинки</a>
 
                     <div class="dropdown">
-                        <a href="#" onclick="sighUpDropDownFunction('price')" class="dropbtn">Ціни</a>
+                        <a href="#" id="priceBtn" onclick="sighUpDropDownFunction('priceBtn','price')" class="dropbtn">Ціни</a>
                         <div id="price" class="dropdown-content">
                             <a href="cheap.html">Від дешевих до дорогих</a>
                             <a href="expensive.html">Від дорогих до дешевих</a>
@@ -31,12 +31,13 @@
                     </div>
 
                     <div class="dropdown">
-                        <a href="#" onclick="sighUpDropDownFunction('sigh-up')" class="dropbtn">Увійти</a>
+                        <a href="#" id="enter" onclick="sighUpDropDownFunction('enter', 'sigh-up')" class="dropbtn">Увійти</a>
                         <div id="sigh-up" class="dropdown-content">
                             <a href="register.html">Створити акаунт</a>
                             <a href="login.html">Увійти</a>
                         </div>
                     </div>
+
 
                 </div>
             </nav>
@@ -48,23 +49,21 @@
     <aside>
         <nav class="asideNav">
             <ul>
-                <li><a href="#">Знижки</a></li>
-                <li><a href="#">Художня література</a></li>
-                <li><a href="#">Пізнавальна література</a></li>
-                <li><a href="#">IT література</a></li>
+                <li><a href="#" id="sales" onmouseenter="asideButtonsAnimation('sales')">Знижки</a> </li>
+                <li><a href="#" id="fiction" onmouseenter="asideButtonsAnimation('fiction')">Художня література</a></li>
+                <li><a href="#" id="informLit" onmouseenter="asideButtonsAnimation('informLit')" >Пізнавальна література</a></li>
+                <li><a href="#" id="ITLit" onmouseenter="asideButtonsAnimation('ITLit')">IT література</a></li>
             </ul>
         </nav>
     </aside>
 
 
     <section>
-
-
         <!--СЛАЙДЕР КОНТЕЙНЕР-->
         <div class="slider_container">
             <button class="left-btn" id="left-btn" onclick="changePreviousPic()" type="button"></button>
             <img id="pic1" src="slider/pic1.jpg" alt="">
-            <button class="right-btn" onclick="changeNextPic()" type="button"></button>
+            <button class="right-btn" id="right-btn" onclick="changeNextPic()" type="button"></button>
         </div>
 
 
@@ -73,7 +72,7 @@
             <div>
                 <img class="img"
                      src="images/imgJavaScript.jpg"
-                />
+                alt>
 
                 <div class="descriptionBook1">
                     <p>up & going js<br>
@@ -86,7 +85,7 @@
             <div>
                 <img class="img"
                      src="images/tigrolovi.jpg"
-                />
+                alt/>
 
                 <div class="descriptionBook2">
                     <p>Тигролови<br>
@@ -98,7 +97,7 @@
             <div>
                 <img class="img"
                      src="images/imgJava.jpg"
-                />
+                 alt>
 
                 <div class="descriptionBook3">
                     <p>A Beginner`s Guide<br>
@@ -110,7 +109,7 @@
             <div>
                 <img class="img"
                      src="images/ingCats.jpg"
-                />
+                 alt>
 
                 <div class="descriptionBook4">
                     <p>50 порід котів<br>
@@ -122,7 +121,7 @@
             <div>
                 <img class="img"
                      src="images/kobzar.jpg"
-                />
+                 alt>
 
                 <div class="descriptionBook5">
                     <p>Кобзар<br>
@@ -135,7 +134,7 @@
             <div>
                 <img class="img"
                      src="images/EverydayEnglish.jpg"
-                />
+                 alt>
                 <div class="descriptionBook6">
                     <p>High-Level Everyday English<br>
                         Steven Collins<br>
@@ -153,7 +152,7 @@
             <div>
                 <img class="img"
                      src="images/imgSecurityEngineering.jpg"
-                />
+                 alt>
 
                 <div class="descriptionBook1">
                     <p>Security Engineering<br>
@@ -166,7 +165,7 @@
             <div>
                 <img class="img"
                      src="images/OxfordEnglish.jpg"
-                />
+                 alt>
                 <div class="descriptionBook6">
                     <p>English Grammar Course<br>
                         Michael Swan<br>

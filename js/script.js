@@ -1,4 +1,5 @@
-function sighUpDropDownFunction(elementId) {
+function sighUpDropDownFunction(toAnimateId, elementId) {
+    dropdownButtonsAnimation(toAnimateId);
     document.getElementById(elementId).classList.toggle("show");
 }
 
@@ -28,6 +29,7 @@ function changeNextPic() {
     }
     let image = images[currentIndex]
     document.getElementById("pic1").src = 'slider/' + image
+    rightButtonAnimation();
 }
 
 function changePreviousPic() {
@@ -37,7 +39,7 @@ function changePreviousPic() {
     }
     let image = images[currentIndex]
     document.getElementById("pic1").src = 'slider/' + image
-    leftButton();
+    leftButtonAnimation();
 }
 
 
@@ -119,42 +121,44 @@ function validate() {
 }
 
 //Анимация
-const leftButton = () => anime ({
+
+const leftButtonAnimation = () => anime({
     targets: '#left-btn',
-    translateX: -100
+    translateX: [
+        { value: -20, duration: 250 },
+        { value: 0, duration: 250 }
+    ]
 });
 
-
-/*
-let blockMove  = anime ({ // Функція anime() створює анімацію.
-    targets: '#left-btn', // targets: '#block' - обрано елемент з ідентифікатором "block" для анімації.
-    translateX: -100,
-// анімація переміщення блоку на -100 по горизонталі та 300 по вертикалі.
-    translateY: 300,
-    autoplay: false, // вимкнена автоматична відтворення. Анімація не розпочнеться автоматично при завантаженні сторінки.
-    backgroundColor: '#dd9357', // зміна кольору фону на '#dd9357'.
-    borderRadius: '50%', //  заокруглення кутів блоку, зробивши його колом.
-    easing: 'linear', //тип згладжування анімації (linear - лінійний).
-    duration: 2000, // тривалість анімації у мілісекундах (2 секунди).
-    direction: 'alternate', //анімація в обидві сторони (вперед-назад).
-    scale: {
-        value: 2, //значення, на яке буде змінено масштаб об'єкта. У цьому випадку, об'єкт буде збільшено у 2 рази.
-        duration: 1600, //тривалість анімації масштабування у мілісекундах.
-        delay: 800, //затримка перед початком анімації масштабування, також у мілісекундах.
-        easing: 'easeInOutQuart' //функція згладжування, яка визначає, як буде змінюватися швидкість анімації
-    },
-    rotate: '1turn'
+const rightButtonAnimation = () => anime({
+    targets: '#right-btn',
+    translateX: [
+        { value: 20, duration: 250 },
+        { value: 1, duration: 250 }
+    ]
 });
-
-*/
-
-//document.querySelector ('.btn').onclick = blockMove.restart;
-//Коли кнопка з класом "btn" натискана (onclick), викликається метод blockMove.restart.
-//Це перезапускає анімацію.
-
-//let moveLeftBotton =
-/*    anime({
-    targets: '#left-btn',
-    autoplay: false,
-    translateX: 100
-});*/
+const dropdownButtonsAnimation= (elementId) => anime({
+    targets: '#'+elementId,
+    scaleX: [
+        { value: 1.5, duration: 300 },
+        { value: 1, duration: 300 }
+    ],
+    scaleY: [
+        { value: 1.5, duration: 300 },
+        { value: 1, duration: 300 }
+    ]
+});
+const asideButtonsAnimation = (elementId) => {
+    anime({
+        targets: '#' + elementId,
+        scaleX: [
+            { value: 1.2, duration: 600 },
+            { value: 1, duration: 600 }
+        ],
+        scaleY: [
+            { value: 1.2, duration: 600 },
+            { value: 1, duration: 600 }
+        ],
+        easing: 'easeInOutQuad'
+    });
+};

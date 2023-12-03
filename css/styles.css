@@ -243,11 +243,10 @@ aside {
     width: 40px;
     height: 40px;
     color: #fff;
-    background-image: url('../slider/left.png');
+    background-image: url('../slider/right.png');
     background-size: auto;
     background-repeat: no-repeat;
     background-position: center;
-    transform: rotate(180deg);
     margin-top: 160px;
     transition: 0.2s;
 }
