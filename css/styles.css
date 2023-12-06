@@ -261,6 +261,7 @@ aside {
 }
 
 /*Файл з реєстрацією, register.html*/
+
 input {
     font-size: 18px;
     width: 150%;
@@ -310,4 +311,26 @@ input {
 .button:hover{
     background-color: floralwhite;
     color: cornflowerblue;
+}
+
+.modalWindow{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background: rgba(1, 1, 1, 0.8);
+}
+.hideWindow{
+    display: none;
+}
+
+.close-modale{
+    margin-left: auto;
+    background-color: grey;
+}
+.close-modale:hover{
+
+    background-color: beige;
 }

@@ -5,7 +5,6 @@
     <link rel="stylesheet" href="css/styles.css">
     <script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
     <script src="js/script.js"></script>
-
     <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <title>My site </title>
 
@@ -32,7 +31,7 @@
                     <div class="dropdown">
                         <a href="#" id="enter" onclick="sighUpDropDownFunction('enter', 'sigh-up')" class="dropbtn">Увійти</a>
                         <div id="sigh-up" class="dropdown-content">
-                            <a href="register.html">Створити акаунт</a>
+                            <a href="#" onclick="showModal()">Створити акаунт</a>
                             <a href="login.html">Увійти</a>
                         </div>
                     </div>
@@ -172,6 +171,56 @@
     </section>
 
 </main>
+
+
+
+
+
+
+<div class="modalWindow" id="modal-window-div" style="display: none">
+    <div class="registration" id="registration">
+        <button class="close-modale" onclick="hideModal()"><i class="fas fa-times"></i></button>
+        <h1 class="form_title">
+            Регістрація
+        </h1>
+
+        <div class="form_field">
+            <input id="input_name" type="text" placeholder="Ім'я">
+        </div>
+
+        <div class="form_field">
+            <input id="input_surname" type="text" placeholder="Прізвище">
+        </div>
+
+        <div class="form_field">
+            <input id="input_email" type="text" placeholder="Пошта">
+        </div>
+
+        <div class="form_field">
+            <input id="input_phone" type="text" placeholder="Телефон">
+        </div>
+
+        <div class="form_field">
+            <input id="input_comment" type="text" placeholder="Коментар">
+        </div>
+        <button class="button" onclick="validate()">Регістрація</button>
+        <div class="hideWindow">
+
+
+        </div>
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
 
 
 <footer>

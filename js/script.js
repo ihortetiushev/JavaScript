@@ -162,3 +162,11 @@ const asideButtonsAnimation = (elementId) => {
         easing: 'easeInOutQuad'
     });
 };
+
+function showModal() {
+    document.getElementById('modal-window-div').style.display = "block";
+}
+
+function hideModal() {
+    document.getElementById('modal-window-div').style.display = "none";
+}
