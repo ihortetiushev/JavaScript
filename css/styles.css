@@ -326,11 +326,11 @@ input {
     display: none;
 }
 
-.close-modale{
+.close-modal-button{
     margin-left: auto;
     background-color: grey;
 }
-.close-modale:hover{
+.close-modal-button:hover{
 
     background-color: beige;
 }

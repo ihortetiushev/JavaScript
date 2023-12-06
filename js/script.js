@@ -121,7 +121,6 @@ function validate() {
 }
 
 //Анимация
-
 const leftButtonAnimation = () => anime({
     targets: '#left-btn',
     translateX: [
@@ -163,8 +162,10 @@ const asideButtonsAnimation = (elementId) => {
     });
 };
 
+/*Модальное окно*/
 function showModal() {
     document.getElementById('modal-window-div').style.display = "block";
+    document.getElementById('input_name').focus();
 }
 
 function hideModal() {
