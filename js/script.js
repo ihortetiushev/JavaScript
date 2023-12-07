@@ -151,12 +151,12 @@ const asideButtonsAnimation = (elementId) => {
     anime({
         targets: '#' + elementId,
         scaleX: [
-            { value: 1.2, duration: 600 },
-            { value: 1, duration: 600 }
+            { value: 1.2, duration: 350 },
+            { value: 1, duration: 350 }
         ],
         scaleY: [
-            { value: 1.2, duration: 600 },
-            { value: 1, duration: 600 }
+            { value: 1.2, duration: 350 },
+            { value: 1, duration: 350 }
         ],
         easing: 'easeInOutQuad'
     });
