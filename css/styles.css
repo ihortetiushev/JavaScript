@@ -334,3 +334,25 @@ input {
 
     background-color: beige;
 }
+.calculator {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 415px;
+    background: burlywood;
+    border-radius: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 175px;
+}
+.calcPic {
+    height: 40px;
+    width: 40px;
+    margin-bottom: -10px;
+}
+.calcPic:hover {
+    background-color: beige;
+}
