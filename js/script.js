@@ -173,24 +173,18 @@ function hideModal() {
 }
 
 /*Калькулятор*/
-function sum() {
-    let n1, n2, result;
-    n1 = document.getElementById('num1').value;
-    n1 = parseInt(n1);
-    n2 = document.getElementById('num2').value;
-    n2 = parseInt(n2);
-    result = n1 + n2;
+let result = 0;
 
+
+function sum() {
+    let bookValue = document.getElementById('bookValue').value;
+    let countBook = document.getElementById('countBook').value;
+    result = result + (bookValue * countBook);
     document.getElementById('out').innerHTML = "Результат: " + result;
 }
-function multiplication() {
-    let n1, n2, result;
-    n1 = document.getElementById('bookValue').value;
-    n1 = parseInt(n1);
-    n2 = document.getElementById('countBook').value;
-    n2 = parseInt(n2);
-    result = n1 * n2;
-
-    document.getElementById('out').innerHTML = "Результат: " + result;
+function reset() {
+    document.getElementById('bookValue').value = "";
+    document.getElementById('countBook').value = "";
+    document.getElementById('out').innerHTML = "Результат: ";
 }
 

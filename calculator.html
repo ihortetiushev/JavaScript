@@ -4,28 +4,29 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/script.js"></script>
-    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <title>My site </title>
 </head>
 <body>
 <main>
 
 
-    <div class="calculator" id="calculator" >
+    <div class="calculator" id="calculator">
         <h1 class="form_title">
             Калькулятор
         </h1>
-        <label><input class="calcNum" id="bookValue" type="text" placeholder="Ціна книги:"></label>
-        <label><input class="calcNum" id="countBook" type="text" placeholder="Кількість книг:"></label>
-        <!--<label><input id="num2" type="text" placeholder="Число 2"></label>-->
-        <div class="calcButtons">
-            <button onclick="sum()">Додавання</button>
-            <button>Віднімання</button>
-            <button onclick="multiplication()">Множення</button>
-            <button>Ділення</button>
+        <div><input class="calcNum" id="bookValue" type="text" placeholder="Ціна книги:">
+            <input class="calcNum" id="countBook" type="text" placeholder="Кількість книг:">
         </div>
-        <p id="out">Результат: </p>
-
+        <button class="buttonAdd" onclick="sum()">Додати ще</button>
+        <!--<label><input id="num2" type="text" placeholder="Число 2"></label>-->
+        <!-- <div class="calcButtons">
+             <button onclick="sum()">Додавання</button>
+             <button>Віднімання</button>
+             <button onclick="multiplication()">Множення</button>
+             <button>Ділення</button>
+         </div>-->
+        <p class="out" id="out">Результат: </p>
+        <button class="reset" onclick="reset()">Скидання</button>
     </div>
 
 

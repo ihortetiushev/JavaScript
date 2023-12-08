@@ -277,6 +277,7 @@ input {
     font-size: 20px;
     line-height: 13px;
     margin-bottom: 18px;
+    text-align: center;
 }
 
 .registration {
@@ -337,8 +338,6 @@ input {
 .calculator {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     max-width: 415px;
     background: burlywood;
     border-radius: 20px;
@@ -365,15 +364,23 @@ input {
     margin-left: -90px;
 }*/
 .calcNum {
-    display: inline-block;
     font-size: 18px;
-    width: 90%;
+    width: 35%;
     border: 2px solid floralwhite;
     border-radius: 5px;
-    margin: 5px;
-    margin-left: -100px; /* Изменено на 0 */
+    margin: 20px;
 }
-
+.reset{
+    width: 20%;
+}
+.buttonAdd{
+    justify-content: right;
+    text-align: center;
+    margin: auto;
+}
+.out{
+    text-align: center;
+}
 
 
 /*display: inline-block;
