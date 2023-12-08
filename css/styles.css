@@ -295,7 +295,6 @@ input {
     margin-top: 175px;
 }
 
-
 .button{
     display: block;
     height: 35px;
@@ -335,6 +334,8 @@ input {
 
     background-color: beige;
 }
+
+/*Калькулятор*/
 .calculator {
     display: flex;
     flex-direction: column;
@@ -355,34 +356,29 @@ input {
 .calcPic:hover {
     background-color: beige;
 }
-/*.calcNum{
-    font-size: 18px;
-    width: 70%;
-    border: 2px solid floralwhite;
-    border-radius: 5px;
-    margin: 5px;
-    margin-left: -90px;
-}*/
 .calcNum {
     font-size: 18px;
     width: 35%;
     border: 2px solid floralwhite;
     border-radius: 5px;
-    margin: 20px;
+    margin: 10px;
 }
 .reset{
     width: 20%;
+    margin-left: 10px;
 }
 .buttonAdd{
+    justify-content: left;
+    text-align: left;
+    margin-top: 8px;
+    margin-right: auto;
+    margin-left: 10px;
+}
+.price{
     justify-content: right;
-    text-align: center;
-    margin: auto;
+    text-align: right;
+    margin-left: 70px;
 }
 .out{
     text-align: center;
 }
-
-
-/*display: inline-block;
-    width: 80px;
-    height: 20px;*/

@@ -9,28 +9,22 @@
 <body>
 <main>
 
-
     <div class="calculator" id="calculator">
         <h1 class="form_title">
             Калькулятор
         </h1>
-        <div><input class="calcNum" id="bookValue" type="text" placeholder="Ціна книги:">
-            <input class="calcNum" id="countBook" type="text" placeholder="Кількість книг:">
+        <input class="calcNum" id="bookValue" type="text" placeholder="Ціна книги:" onkeyup="interimSum()">
+
+        <div>
+            <input class="calcNum" id="countBook" type="text" placeholder="Кількість книг:" onkeyup="interimSum()">
+            <label class="price" id="price">Ціна за кніги: </label>
         </div>
         <button class="buttonAdd" onclick="sum()">Додати ще</button>
-        <!--<label><input id="num2" type="text" placeholder="Число 2"></label>-->
-        <!-- <div class="calcButtons">
-             <button onclick="sum()">Додавання</button>
-             <button>Віднімання</button>
-             <button onclick="multiplication()">Множення</button>
-             <button>Ділення</button>
-         </div>-->
-        <p class="out" id="out">Результат: </p>
+
+        <p class="out" id="out">Загальна сума: </p>
         <button class="reset" onclick="reset()">Скидання</button>
     </div>
 
-
 </main>
 </body>
-
 </html>

@@ -175,16 +175,26 @@ function hideModal() {
 /*Калькулятор*/
 let result = 0;
 
-
 function sum() {
     let bookValue = document.getElementById('bookValue').value;
     let countBook = document.getElementById('countBook').value;
     result = result + (bookValue * countBook);
     document.getElementById('out').innerHTML = "Результат: " + result;
+    document.getElementById('bookValue').value = "";
+    document.getElementById('countBook').value = "";
+    document.getElementById('bookValue').focus();
+    document.getElementById('price').innerHTML = "Ціна за книги: ";
+}
+function interimSum() {
+    let bookValue = document.getElementById('bookValue').value;
+    let countBook = document.getElementById('countBook').value;
+    document.getElementById('price').innerHTML = "Ціна за книги: " + bookValue * countBook;
 }
 function reset() {
     document.getElementById('bookValue').value = "";
     document.getElementById('countBook').value = "";
     document.getElementById('out').innerHTML = "Результат: ";
+    document.getElementById('price').innerHTML = "Ціна за книги: ";
+    result = 0;
 }
 
