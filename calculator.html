@@ -15,22 +15,17 @@
         <h1 class="form_title">
             Калькулятор
         </h1>
-
-        <p>Число 1<input type="text"></p>
-        <p>Число 2<input type="text"></p>
-
-       <!-- <div class="form_field">
-            <input id="input_email" type="text" placeholder="Пошта">
+        <label><input class="calcNum" id="bookValue" type="text" placeholder="Ціна книги:"></label>
+        <label><input class="calcNum" id="countBook" type="text" placeholder="Кількість книг:"></label>
+        <!--<label><input id="num2" type="text" placeholder="Число 2"></label>-->
+        <div class="calcButtons">
+            <button onclick="sum()">Додавання</button>
+            <button>Віднімання</button>
+            <button onclick="multiplication()">Множення</button>
+            <button>Ділення</button>
         </div>
+        <p id="out">Результат: </p>
 
-        <div class="form_field">
-            <input id="input_phone" type="text" placeholder="Телефон">
-        </div>
-
-        <div class="form_field">
-            <input id="input_comment" type="text" placeholder="Коментар">
-        </div>
-        <button class="button" onclick="validate()">Регістрація</button>-->
     </div>
 
 
