@@ -126,7 +126,8 @@ const leftButtonAnimation = () => anime({
     translateX: [
         { value: -20, duration: 250 },
         { value: 0, duration: 250 }
-    ]
+    ],
+    easing: 'easeInOutQuad',
 });
 
 const rightButtonAnimation = () => anime({
@@ -134,7 +135,8 @@ const rightButtonAnimation = () => anime({
     translateX: [
         { value: 20, duration: 250 },
         { value: 1, duration: 250 }
-    ]
+    ],
+    easing: 'easeInOutQuad',
 });
 const dropdownButtonsAnimation= (elementId) => anime({
     targets: '#'+elementId,
@@ -158,7 +160,7 @@ const asideButtonsAnimation = (elementId) => {
             { value: 1.2, duration: 350 },
             { value: 1, duration: 350 }
         ],
-        easing: 'easeInOutQuad'
+        easing: 'easeInOutQuad',
     });
 };
 
