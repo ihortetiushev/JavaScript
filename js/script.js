@@ -45,7 +45,7 @@ function changePreviousPic() {
 
 //Валидация
 function validateName() {
-    let regex = /^[a-zA-ZА-Яа-яЁІЇ]{3,}$/;
+    let regex = /^[A-zА-яЁёІіЇї]{3,}$/;
     let nameValue = document.getElementById("input_name").value;
     if (nameValue.match(regex)) {
         return true;
@@ -56,7 +56,7 @@ function validateName() {
 }
 
 function validateSurname() {
-    let regex = /^[a-zA-Zа-яА-ЯёЁ]{3,}$/;
+    let regex = /^[A-zА-яЁёІіЇї]{3,}$/;
     let surnameValue = document.getElementById("input_surname").value;
     if (surnameValue.match(regex)) {
         return true;
